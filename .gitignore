@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary training outputs
+runs/
+checkpoints/
+wandb/
+
+# Large zip backups (optional)
+*.zip
+
+# But KEEP trained models for deployment
+!distilbert_model/
+!tabular_models/
