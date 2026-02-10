@@ -1,3 +1,6 @@
+# Ignore DistilBERT large model (hosted on Hugging Face)
+distilbert_model/
+
 # Python cache
 __pycache__/
 *.pyc
@@ -28,5 +31,4 @@ wandb/
 *.zip
 
 # But KEEP trained models for deployment
-!distilbert_model/
 !tabular_models/

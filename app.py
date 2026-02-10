@@ -37,8 +37,11 @@ def load_models():
     anxiety_model = joblib.load("tabular_models/anxiety_model.pkl")
     panic_model = joblib.load("tabular_models/panic_model.pkl")
 
-    tokenizer = AutoTokenizer.from_pretrained("distilbert_model")
-    bert_model = AutoModelForSequenceClassification.from_pretrained("distilbert_model")
+    MODEL_PATH = "ultimatrix2/psycare-distilbert"
+
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
+    bert_model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
+
     bert_model.eval()
 
     return depression_model, anxiety_model, panic_model, tokenizer, bert_model
